@@ -43,7 +43,7 @@ const Contact = () => {
       console.error('Error sending message:', error)
       toast.error('Network error. Please check your connection and try again.')
     } finally {
-      setIsSubmitting(false)
+      setIsSubmitting(false) 
     }
   }
 
