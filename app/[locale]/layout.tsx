@@ -9,8 +9,8 @@ const inter = Inter({ subsets: ['latin'] })
 const locales = ['en', 'fr'];
 
 export const metadata: Metadata = {
-  title: 'Portfolio - Full Stack Developer',
-  description: 'Modern portfolio showcasing web development projects and skills',
+  title: 'SAID AAZRI - Full Stack Developer',
+  description: 'Portfolio de SAID AAZRI - Développeur Full Stack spécialisé dans les technologies modernes',
 }
 
 export default async function LocaleLayout({

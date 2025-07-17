@@ -58,19 +58,19 @@ const Contact = () => {
     {
       icon: Mail,
       title: t('info.email'),
-      value: 'john.doe@example.com',
-      href: 'mailto:john.doe@example.com'
+      value: 'contact@said-aazri.com',
+      href: 'mailto:contact@said-aazri.com'
     },
     {
       icon: Phone,
       title: t('info.phone'),
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567'
+      value: '07 71 95 66 48',
+      href: 'tel:+33771956648'
     },
     {
       icon: MapPin,
       title: t('info.location'),
-      value: 'San Francisco, CA',
+      value: 'Marrakech',
       href: '#'
     }
   ]

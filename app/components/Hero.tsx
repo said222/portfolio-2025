@@ -91,13 +91,15 @@ const Hero = () => {
           className="flex justify-center space-x-6 mb-16"
         >
           {[
-            { icon: Github, href: '#' },
-            { icon: Linkedin, href: '#' },
-            { icon: Mail, href: '#' },
+            { icon: Github, href: 'https://github.com/said222', external: true },
+            { icon: Linkedin, href: 'https://www.linkedin.com/in/said-aazri-005b0314b/', external: true },
+            { icon: Mail, href: 'mailto:contact@said-aazri.com', external: false },
           ].map((social, index) => (
             <motion.a
               key={index}
               href={social.href}
+              target={social.external ? "_blank" : undefined}
+              rel={social.external ? "noopener noreferrer" : undefined}
               whileHover={{ scale: 1.2, y: -5 }}
               className="text-gray-600 dark:text-gray-400 hover:text-primary-500 transition-colors"
             >

@@ -9,9 +9,9 @@ const Footer = () => {
   const nav = useTranslations('nav')
   
   const socialLinks = [
-    { icon: Github, href: '#', label: 'GitHub' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Mail, href: '#', label: 'Email' },
+    { icon: Github, href: 'https://github.com/said222', label: 'GitHub', external: true },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/said-aazri-005b0314b/', label: 'LinkedIn', external: true },
+    { icon: Mail, href: 'mailto:contact@said-aazri.com', label: 'Email', external: false },
   ]
 
   return (
@@ -39,6 +39,8 @@ const Footer = () => {
               <motion.a
                 key={social.label}
                 href={social.href}
+                target={social.external ? "_blank" : undefined}
+                rel={social.external ? "noopener noreferrer" : undefined}
                 whileHover={{ scale: 1.2, y: -5 }}
                 className="text-gray-400 hover:text-primary-500 transition-colors"
                 aria-label={social.label}
@@ -83,7 +85,7 @@ const Footer = () => {
             className="text-center text-gray-400"
           >
             <p className="flex items-center justify-center space-x-1">
-              <span>© 2024 John Doe. {t('rights')}</span>
+              <span>© 2024 SAID AAZRI. {t('rights')}</span>
             </p>
           </motion.div>
         </div>
